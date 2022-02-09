@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="false"
+             x:Class="TestGeoloc.MainPage">
+
+    <StackLayout BackgroundColor="White"  VerticalOptions="Center">
+        <Frame Padding="24" CornerRadius="0">
+            <Label Text="Rescue App" HorizontalTextAlignment="Center"  TextColor="#80050A" FontSize="36" FontAttributes ="Bold"/>
+        </Frame>
+        <Label x:Name="defaultNumber" Text="Domyślny numer telefonu: " FontSize="14" Margin="0,8,0,0" HorizontalOptions="Center" />
+        <Label x:Name="labelNumber" FontSize="16" Margin="0,1,0,0" HorizontalOptions="Center" />
+        <Button x:Name="but_Main" BackgroundColor="#A01722" FontSize="20" TextColor="White" Text="Wyślij lokalizację" 
+                Clicked="Button_Clicked" Margin="0,80,0,0" WidthRequest="10" HeightRequest="90" IsTabStop="False"></Button>
+        <Button Text="Dodaj domyślny numer" Clicked="Button_Add" Margin="0,90,0,0"></Button>
+        <Button Text="Zmien tryb" Clicked="Button_Chng" Margin="0,1,0,0"></Button>
+        <Button Text="Udostepnij" Clicked="Button_Shr" Margin="0,1,0,0"></Button>
+        <Button Text="Ustawienia" Clicked="Button_Set" Margin="0,1,0,0"></Button>
+    </StackLayout>
+</ContentPage>

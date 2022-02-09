@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestGeoloc.SetPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Częstotliwość oczekiwania na aktywność użytkownika dla trybu Aktywnego" x:Name="Lbl_Time_A" HorizontalTextAlignment="Center" FontSize="14" Margin="0,20,0,0"></Label>
+            <Button Clicked="But_Tim_A_Clicked" x:Name="But_Time_A_Name"></Button>
+
+            <Label Text="Częstotliwość wysyłania wiadomości w trybie Cyklicznym" x:Name="Lbl_Time_S" HorizontalTextAlignment="Center" FontSize="14" Margin="0,20,0,0"></Label>
+            <Button Clicked="But_Tim_S_Clicked" x:Name="But_Time_S_Name"></Button>
+
+            <Label Text="Wycofanie uprawnień dla aplikacji" x:Name="Lbl_Deny_Priv" HorizontalTextAlignment="Center" FontSize="14" Margin="0,20,0,0"></Label>
+            <Button Text="Ustawienia" Clicked="But_Priv_Clicked" x:Name="But_Priv_Name"></Button>
+
+            <Label Text="Ustawienia domyślne aplikacji" x:Name="Lbl_Reset" HorizontalTextAlignment="Center" FontSize="14" Margin="0,20,0,0"></Label>
+            <Button Text="Przywróć" Clicked="But_Reset"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
